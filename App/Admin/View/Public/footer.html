@@ -1,0 +1,75 @@
+</body>
+<notempty name="uploadify">
+
+<script language="javascript" type="text/javascript">
+    //防止客户端缓存文件，造成uploadify.js不更新，而引起的“喔唷，崩溃啦”  
+    document.write("<script type='text/javascript' " +
+    "src='__ROOT__/uploadify/jquery.uploadify.min.js?" +
+    Math.random() +
+    "'></s" +
+    "cript>");
+</script>
+
+<script language="javascript" type="text/javascript">
+//图片上传
+$(function(){
+	setTimeout(function(){
+		$('[type=file]').each(function(){
+			var name = $(this).attr('name');
+			var rep = $(this).attr('repetition');
+			$(this).uploadify({
+				'formData'     : {
+					'name' : name,
+					'repetition':rep
+					
+				},
+				'swf'      : "__ROOT__/uploadify/uploadify.swf",
+				'uploader' : '{:U(CONTROLLER_NAME."/uploads")}',
+				'buttonText': '图片上传',
+				'buttonClass':'btn btn-info',
+				'width':65,
+				'height':28,
+				'onUploadSuccess': function(file, data, response){
+					var v = eval('('+data+')');
+					if (v.status == '1') {
+						alert(v.msg);
+						//$('[name=' + name + '_show]').attr('src',v.info);
+						$('[name=' + name + ']').val(v.data.file);
+						var str = "<img style='margin-left:10px;' name='"+ name +"' src='__UPLOADS__/"+v.data.file+"' width='50' height='50' onclick='delimage(this,"+v.data.id+")'>";
+						
+						if(rep == 1){
+							str += '<input type="hidden" name="' + name + '[]" value="'+v.data.id+'" />';
+							$('[name=' + name + '_show]').append(str);
+						}else{
+							str += '<input type="hidden" name="' + name + '" value="'+v.data.file+'" />';
+							$('[name=' + name + '_show]').html(str);
+						}
+					}else {
+						alert(v.msg);
+					}
+				},
+				'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+					alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+				},
+			});
+		});
+	}, 10);
+});
+function delimage(obj,id){
+	var name = $(obj).attr("name");
+	var gid  = $("input[name=id]").val();
+	if(confirm('确定要该图片删除吗？'))
+	$.post('{:U(CONTROLLER_NAME."/delimg")}',{imageid:id,name:name,gid:gid},function(data){
+		if(data.status == 1){
+			alert(data.msg);
+			$(obj).next("input[type=hidden]").remove();
+			obj.remove();
+		}else{
+			alert(data.msg);
+		}
+	},"json");
+}
+</script>
+</notempty>
+
+</html>

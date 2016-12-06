@@ -1,0 +1,30 @@
+[ 2016-06-12T09:26:18+08:00 ] ::1 /zwj/Public/Admin/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-12T15:45:14+08:00 ] ::1 /zwj/Uploads/Adv/2016/06/12/575d128130b90.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-12T15:45:23+08:00 ] ::1 /zwj/Uploads/Adv/2016/06/12/575d128130b90.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-12T15:45:23+08:00 ] ::1 /zwj/Uploads/Adv/2016/06/12/575d128130b90.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-12T17:12:00+08:00 ] ::1 /zwj/Public/Admin/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,36 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<div class="blank5"></div>
+
+    <html:list 
+    id="dataTable" 
+    style="table table-bordered table-hover definewidth m10" 
+    name="list" 
+    checkbox="true" 
+    action="true" 
+    datasource="list" 
+    show="name:备份名称
+            ,time:备份时间
+            ,size:文件大小
+            " 
+    actionlist="download:下载,recover:还原,datadel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+<script>
+//添加跳转
+function datadel(name)
+{
+    location.href = ROOT+"/"+CONTROLLER_NAME+"/deletebak/file/"+name+".html";
+}
+function download(name)
+{
+    location.href = ROOT+"/"+CONTROLLER_NAME+"/downloadBak/file/"+name+".html";
+}
+function recover(name){
+    location.href = ROOT+"/"+CONTROLLER_NAME+"/recover/file/"+name+".html";
+}
+</script>
+</body>
+</html>

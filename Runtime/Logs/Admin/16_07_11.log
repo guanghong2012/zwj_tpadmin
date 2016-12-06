@@ -1,0 +1,1521 @@
+[ 2016-07-11T09:17:33+08:00 ] ::1 /zwj/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003424s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003387s ]
+
+[ 2016-07-11T09:17:33+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2016-07-11T09:17:36+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002225s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0685s ]
+SQL: SELECT * FROM `lyh_admin` WHERE `adm_user` = 'admin' AND `is_effect` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0282s ]
+SQL: INSERT INTO `lyh_log` (`log_info`,`log_time`,`log_admin`,`log_ip`,`log_status`,`module`,`action`) VALUES ('admin登陆成功！','1468199856','1','0.0.0.0','1','Index','login') [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0039s ]
+SQL: UPDATE `lyh_admin` SET `adm_user`='admin',`adm_password`='3c086f596b4aee58e1d71b3626fefc87',`is_effect`='1',`is_delete`='0',`role_id`='1',`login_time`='1468199856',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2016-07-11T09:17:38+08:00 ] ::1 /zwj/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001628s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002688s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 0 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 1 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 19 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 21 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 14 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 4 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 24 ) ORDER BY num asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 2 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 7 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 8 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 12 ) ORDER BY num asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 26 ) ORDER BY num asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001314s ]
+
+[ 2016-07-11T09:17:40+08:00 ] ::1 /zwj/admin.php/index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001731s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002522s ]
+SQL: set interactive_timeout=24*3600 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Use of undefined constant SYSTEM_VER - assumed 'SYSTEM_VER' E:\xampp\htdocs\zwj\Runtime\Cache\Admin\8aaadb31f2d26d849cb400504e368c01.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2016-07-11T09:17:45+08:00 ] ::1 /zwj/admin.php/Conf/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002342s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+SQL: SHOW COLUMNS FROM `lyh_conf` [ RunTime:0.0537s ]
+SQL: SELECT * FROM `lyh_conf`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_image` [ RunTime:0.0172s ]
+SQL: SELECT `id`,`file` FROM `lyh_image` WHERE `action` = 'Conf' AND `name` = 'LOGO'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib.class.php 第 100 行.
+NOTIC: [8] Undefined index: style E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 541 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2016-07-11T09:17:47+08:00 ] ::1 /zwj/admin.php/Conf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003300s ]
+SQL: SHOW COLUMNS FROM `lyh_conf` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `lyh_conf`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lyh_image` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`file` FROM `lyh_image` WHERE `action` = 'Conf' AND `name` = 'LOGO'  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib.class.php 第 100 行.
+NOTIC: [8] Undefined index: style E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 541 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2016-07-11T10:30:09+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0388s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012206s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2016-07-11T10:56:39+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001861s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0303s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_hooks` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_hooks` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003836s ]
+
+[ 2016-07-11T10:56:42+08:00 ] ::1 /zwj/admin.php/Block/edithook/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons`,`status` FROM `lyh_hooks` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-07-11T10:57:12+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001761s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002184s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_hooks` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_hooks` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2016-07-11T10:57:15+08:00 ] ::1 /zwj/admin.php/Block/edithook/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001297s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons`,`status` FROM `lyh_hooks` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-07-11T10:57:22+08:00 ] ::1 /zwj/admin.php/Block/updateHook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001335s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002112s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0037s ]
+SQL: UPDATE `lyh_hooks` SET `name`='FirstHook',`description`='第一个钩子',`status`='1',`addons`='CeshiBlock,CBlock',`update_time`='1468205840' WHERE `id` = 19 [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2016-07-11T10:57:24+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0028s ]
+SQL: SELECT `name`,`addons` FROM `lyh_hooks`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name` FROM `lyh_block` WHERE `status` = 1 AND `name` IN ('CeshiBlock','CBlock')  [ RunTime:0.0004s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:1.023606s ]
+INFO: [ app_init ] --END-- [ RunTime:1.024185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003877s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_hooks` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_hooks` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2016-07-11T11:09:42+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004206s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002522s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-07-11T11:09:47+08:00 ] ::1 /zwj/admin.php/Block/delete.html?id=21&ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002841s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `lyh_block` WHERE `id` IN ('21')  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `lyh_hooks`  [ RunTime:0.0003s ]
+SQL: SELECT `addons` FROM `lyh_hooks` WHERE ( name='FirstHook' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `lyh_hooks` SET `addons`='CeshiBlock' WHERE ( name='FirstHook' ) [ RunTime:0.0003s ]
+SQL: DELETE FROM `lyh_block` WHERE `id` = 21 [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0031s ]
+SQL: INSERT INTO `lyh_log` (`log_info`,`log_time`,`log_admin`,`log_ip`,`log_status`,`module`,`action`) VALUES ('删除表Block的ID为21的记录！','1468206587','1','0.0.0.0','1','Block','delete') [ RunTime:0.0004s ]
+
+[ 2016-07-11T11:09:48+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002402s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2016-07-11T11:10:02+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002559s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_hooks` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_hooks` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-07-11T11:10:04+08:00 ] ::1 /zwj/admin.php/Block/edithook/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001343s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons`,`status` FROM `lyh_hooks` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-07-11T11:10:09+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001355s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_hooks` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_hooks` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\9e36257da49d08234be69966095e49c9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2016-07-11T11:10:12+08:00 ] ::1 /zwj/admin.php/Block/edithook/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001412s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lyh_hooks` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`name`,`description`,`type`,`update_time`,`addons`,`status` FROM `lyh_hooks` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-07-11T11:10:16+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002969s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2016-07-11T11:11:09+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001957s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002239s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2016-07-11T11:13:53+08:00 ] ::1 /zwj/admin.php/adv/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002955s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002649s ]
+SQL: SHOW COLUMNS FROM `lyh_adv` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Adv' ORDER BY sort asc  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Adv' AND `search` = 1  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_adv` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_adv` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'adv' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'adv' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0154s ]
+NOTIC: [8] Undefined variable: id E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: code E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: image E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: width E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: height E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: type E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: url E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 256 行.
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 262 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-07-11T11:36:00+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003734s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+NOTIC: [2] Missing argument 1 for S(), called in E:\xampp\htdocs\zwj\App\Admin\Controller\BlockController.class.php on line 20 and defined E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1098 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1104 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1112 行.
+
+[ 2016-07-11T11:36:03+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001423s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002538s ]
+NOTIC: [2] Missing argument 1 for S(), called in E:\xampp\htdocs\zwj\App\Admin\Controller\BlockController.class.php on line 20 and defined E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1098 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1104 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1112 行.
+
+[ 2016-07-11T11:36:05+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001721s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003825s ]
+NOTIC: [2] Missing argument 1 for S(), called in E:\xampp\htdocs\zwj\App\Admin\Controller\BlockController.class.php on line 20 and defined E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1098 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1104 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1112 行.
+
+[ 2016-07-11T11:36:06+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002611s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002519s ]
+NOTIC: [2] Missing argument 1 for S(), called in E:\xampp\htdocs\zwj\App\Admin\Controller\BlockController.class.php on line 20 and defined E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1098 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1104 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1112 行.
+
+[ 2016-07-11T11:36:16+08:00 ] ::1 /zwj/admin.php/Block/hooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002037s ]
+
+[ 2016-07-11T11:36:17+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002449s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002732s ]
+
+[ 2016-07-11T11:36:18+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+
+[ 2016-07-11T11:36:49+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002022s ]
+
+[ 2016-07-11T11:37:08+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002217s ]
+
+[ 2016-07-11T11:37:19+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001311s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002320s ]
+NOTIC: [2] Missing argument 1 for F(), called in E:\xampp\htdocs\zwj\App\Admin\Controller\BlockController.class.php on line 20 and defined E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1132 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1134 行.
+NOTIC: [8] Undefined variable: name E:\xampp\htdocs\zwj\ThinkPHP\Common\functions.php 第 1152 行.
+
+[ 2016-07-11T11:45:59+08:00 ] ::1 /zwj/admin.php/Block/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001944s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002494s ]
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_block` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_block` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\b55b6830be1dd2a173607249bf5dec5f.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-07-11T14:30:47+08:00 ] ::1 /zwj/admin.php/Log/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002239s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003114s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Log' ORDER BY sort asc  [ RunTime:0.0015s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0225s ]
+SQL: SELECT `id`,`adm_user` FROM `lyh_admin`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_log` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_log` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: log_admin E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 64 行.
+NOTIC: [8] Undefined index: model E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 67 行.
+NOTIC: [8] Undefined index: start_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 69 行.
+NOTIC: [8] Undefined index: end_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 71 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2016-07-11T14:31:30+08:00 ] ::1 /zwj/admin.php/Log/delete.html?id=260&ajax=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001865s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Log' ORDER BY sort asc  [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: DELETE FROM `lyh_log` WHERE `id` = 260 [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_table` WHERE `data` LIKE 'Log|%'  [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 133 行.
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0055s ]
+SQL: INSERT INTO `lyh_log` (`log_info`,`log_time`,`log_admin`,`log_ip`,`log_status`,`module`,`action`) VALUES ('删除表Log的ID为260的记录！','1468218690','1','0.0.0.0','1','Log','delete') [ RunTime:0.0007s ]
+
+[ 2016-07-11T14:31:31+08:00 ] ::1 /zwj/admin.php/Log/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002276s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Log' ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0053s ]
+SQL: SELECT `id`,`adm_user` FROM `lyh_admin`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_log` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_log` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined index: log_admin E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 64 行.
+NOTIC: [8] Undefined index: model E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 67 行.
+NOTIC: [8] Undefined index: start_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 69 行.
+NOTIC: [8] Undefined index: end_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 71 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001457s ]
+
+[ 2016-07-11T14:31:34+08:00 ] ::1 /zwj/admin.php/Log/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001792s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002198s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Log' ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`adm_user` FROM `lyh_admin`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_log` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_log` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: log_admin E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 64 行.
+NOTIC: [8] Undefined index: model E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 67 行.
+NOTIC: [8] Undefined index: start_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 69 行.
+NOTIC: [8] Undefined index: end_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 71 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-07-11T14:31:54+08:00 ] ::1 /zwj/admin.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001824s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005385s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 19 行.
+SQL: SELECT * FROM `lyh_menu` ORDER BY num  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: menuname E:\xampp\htdocs\zwj\Runtime\Cache\Admin\5a1d71dcf039f1b3725a8d8d96ae9d91.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2016-07-11T14:32:11+08:00 ] ::1 /zwj/admin.php/Admin/delete_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001450s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002804s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Admin' ORDER BY sort asc  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_admin` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_admin` WHERE `is_delete` = 1 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lyh_role` [ RunTime:0.0332s ]
+SQL: SELECT `id`,`name` FROM `lyh_role` WHERE ( is_effect )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-07-11T14:32:22+08:00 ] ::1 /zwj/admin.php/Admin/delete_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001408s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Admin' ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_admin` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_admin` WHERE `is_delete` = 1 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_role` [ RunTime:0.0032s ]
+SQL: SELECT `id`,`name` FROM `lyh_role` WHERE ( is_effect )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\f34e4859f744fd1d28fa826027ee5cc2.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-07-11T14:32:31+08:00 ] ::1 /zwj/admin.php/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001391s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002277s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 19 行.
+SQL: SELECT * FROM `lyh_menu` ORDER BY num  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: menuname E:\xampp\htdocs\zwj\Runtime\Cache\Admin\5a1d71dcf039f1b3725a8d8d96ae9d91.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2016-07-11T14:32:35+08:00 ] ::1 /zwj/admin.php/Log/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001427s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002767s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Log' ORDER BY sort asc  [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 15 行.
+NOTIC: [8] Undefined variable: _validate E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 69 行.
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0035s ]
+SQL: SELECT `id`,`adm_user` FROM `lyh_admin`  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_log` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_log` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: log_admin E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 64 行.
+NOTIC: [8] Undefined index: model E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 67 行.
+NOTIC: [8] Undefined index: start_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 69 行.
+NOTIC: [8] Undefined index: end_time E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 71 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\2c8fe2f7e858adea21f43263b1020cf5.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2016-07-11T14:45:46+08:00 ] ::1 /zwj/admin.php/Data/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001909s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002532s ]
+SQL: set interactive_timeout=24*3600 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\41a0a618123f32a11b1b34484c07db4d.php 第 57 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-07-11T14:45:48+08:00 ] ::1 /zwj/admin.php/Data/tablist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001946s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002259s ]
+SQL: set interactive_timeout=24*3600 [ RunTime:0.0002s ]
+SQL: SHOW TABLE STATUS FROM zwjlyh [ RunTime:0.1929s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: sort E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 378 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sort E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: sortType E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+NOTIC: [8] Undefined variable: order E:\xampp\htdocs\zwj\Runtime\Cache\Admin\d9669141d882a9e028b9367e3fed7631.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+

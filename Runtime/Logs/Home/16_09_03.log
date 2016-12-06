@@ -1,0 +1,10 @@
+[ 2016-09-03T10:28:57+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.019438s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030240s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014678s ]
+

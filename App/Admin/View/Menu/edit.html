@@ -1,0 +1,111 @@
+<include file="Public/header" />
+<link href="__PUBLIC__/Admin/assets/css/main-min.css" rel="stylesheet" type="text/css" />
+<script>
+	function ss(){
+		var select = $('#medium').val();
+		if(select == 0){
+			$('.noicon').hide();
+			$('.icon').show();
+		}else{
+			$('.icon').hide();
+			$('.noicon').show();
+		}
+	}
+</script>
+
+<div class="main_title m10">{:L('EDIT')} <a href="{:u(CONTROLLER_NAME."/index")}" class="back_list">{:L('BACK_LIST')}</a></div>
+
+<form action="" method="post" class="definewidth m20">
+<table class="table table-bordered table-hover m10">
+	<tr>
+        <td width="10%" class="tableleft">上级</td>
+        <td>
+            <select name="pid" id="medium" onchange="ss();">
+            <option value="0">一级菜单</option>
+			{$select_menus}
+			</select>
+        </td>
+    </tr>
+	<input type="hidden" name="id" value="{$id}"/>
+    <tr>
+        <td class="tableleft">名称</td>
+        <td><input type="text" name="name" value="{$info.name}"/></td>
+    </tr>
+	
+	<tr class="noicon">
+        <td class="tableleft">MODEL</td>
+        <td><input type="text" name="model" value="{$info.model}" /></td>
+    </tr>
+    <tr class="noicon">
+        <td class="tableleft">ACTION</td>
+        <td><input type="text" name="action" value="{$info.action}" /></td>
+    </tr>
+	<tr class="noicon">
+        <td class="tableleft">DATA</td>
+        <td><input type="text" name="data" value="{$info.data}" /></td>
+    </tr>
+
+	<tr>
+        <td class="tableleft">排序</td>
+        <td><input type="text" name="num" value="{$info.num}" /></td>
+    </tr>
+    <tr>
+        <td class="tableleft">备注</td>
+        <td><input type="text" name="info" value="{$info.info}" /></td>
+    </tr>
+	<tr class="icon">
+        <td class="tableleft">图标</td>
+        <td>
+			<label class="nav-item-inner nav-home"><input type="radio" <eq name="info.icon" value="home">checked</eq> name="icon" value="home" /></label>
+			<label class="nav-item-inner nav-order"><input type="radio" <eq name="info.icon" value="order">checked</eq> name="icon" value="order" /></label>
+			<label class="nav-item-inner nav-goods"><input type="radio" <eq name="info.icon" value="goods">checked</eq> name="icon" value="goods" /></label>
+			<label class="nav-item-inner nav-monitor"><input type="radio" <eq name="info.icon" value="monitor">checked</eq> name="icon" value="monitor" /></label>
+			<label class="nav-item-inner nav-cost"><input type="radio" <eq name="info.icon" value="cost">checked</eq> name="icon" value="cost" /></label>
+			<label class="nav-item-inner nav-user"><input type="radio" <eq name="info.icon" value="user">checked</eq> name="icon" value="user" /></label>
+			<label class="nav-item-inner nav-permission"><input type="radio" <eq name="info.icon" value="permission">checked</eq> name="icon" value="permission" /></label>
+			<label class="nav-item-inner nav-inventory"><input type="radio" <eq name="info.icon" value="inventory">checked</eq> name="icon" value="inventory" /></label>
+			<label class="nav-item-inner nav-register"><input type="radio" <eq name="info.icon" value="register">checked</eq> name="icon" value="register" /></label>
+			<label class="nav-item-inner nav-package"><input type="radio" <eq name="info.icon" value="package">checked</eq> name="icon" value="package" /></label>
+			<label class="nav-item-inner nav-certification"><input type="radio" <eq name="info.icon" value="certification">checked</eq> name="icon" value="certification" /></label>
+			<label class="nav-item-inner nav-supplychain"><input type="radio" <eq name="info.icon" value="supplychain">checked</eq> name="icon" value="supplychain" /></label>
+		</td>
+    </tr>
+
+    <tr>
+        <td class="tableleft">设计表</td>
+        <td>
+            <label style="float:left;margin-left:10px;"><input type="radio" name="table" value="1" <if condition="$info.table eq 1"> checked </if> /> 启用</label>
+            <label style="float:left;margin-left:10px;"><input type="radio" name="table" value="0" <if condition="$info.table eq 0"> checked </if>/> 禁用</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableleft">状态</td>
+        <td>
+            <label style="float:left;margin-left:10px;"><input type="radio" name="status" value="1" <if condition="$info.status eq 1"> checked </if> /> 启用</label>
+            <label style="float:left;margin-left:10px;"><input type="radio" name="status" value="0" <if condition="$info.status eq 0"> checked </if>/> 禁用</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="tableleft"></td>
+        <td>
+			<input type="hidden" name="id" value="{$info.id}" />
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+            <a href="{:u(CONTROLLER_NAME."/index",array('menu_id'=>$menuid))}" class="btn btn-success">{:L('BACK_LIST')}</a>
+        </td>
+    </tr>
+</table>
+</form>
+<include file="Public/footer" />
+<script>
+    $(function () {       
+		var select = $('#medium').val();
+		if(select == 0){
+			$('.noicon').hide();
+		}else{
+			$('.icon').hide();
+		}
+    });
+	
+</script>

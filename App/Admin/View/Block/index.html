@@ -1,0 +1,39 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="add();">{:L('ADD')}</button>
+    <button type="button" class="btn" onclick="foreverdel();">{:L('DEL')}</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,title:模块名称
+			,name:标识
+			,description:描述|400px
+			,status|get_is_effect=$user['id']:是否启用 
+			,create_time|to_date:创建时间
+			" 
+	actionlist="config:设置, foreverdel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+<script>
+//添加跳转
+function add()
+{
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/create.html";
+}
+function config(id){
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/config/id/"+id+".html";
+}
+</script>
+</body>
+</html>

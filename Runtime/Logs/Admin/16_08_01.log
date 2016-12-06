@@ -1,0 +1,483 @@
+[ 2016-08-01T14:00:49+08:00 ] ::1 /zwj/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.026412s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.039031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039910s ]
+
+[ 2016-08-01T14:00:49+08:00 ] ::1 /zwj/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001332s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002388s ]
+
+[ 2016-08-01T14:00:49+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001450s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-08-01T14:00:52+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001918s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0898s ]
+SQL: SELECT * FROM `lyh_admin` WHERE `adm_user` = 'admin' AND `is_effect` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0395s ]
+SQL: INSERT INTO `lyh_log` (`log_info`,`log_time`,`log_admin`,`log_ip`,`log_status`,`module`,`action`) VALUES ('admin登陆成功！','1470031252','1','0.0.0.0','1','Index','login') [ RunTime:0.0386s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0040s ]
+SQL: UPDATE `lyh_admin` SET `adm_user`='admin',`adm_password`='3c086f596b4aee58e1d71b3626fefc87',`is_effect`='1',`is_delete`='0',`role_id`='1',`login_time`='1470031252',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001171s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-08-01T14:00:55+08:00 ] ::1 /zwj/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002593s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003549s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0451s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 0 ) ORDER BY num asc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 1 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 19 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 21 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 14 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 4 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 24 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 2 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 7 ) ORDER BY num asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 8 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 12 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 26 ) ORDER BY num asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 30 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 31 ) ORDER BY num asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 33 ) ORDER BY num asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2016-08-01T14:01:00+08:00 ] ::1 /zwj/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001398s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 0 ) ORDER BY num asc  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 1 ) ORDER BY num asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 19 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 21 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 14 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 4 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 24 ) ORDER BY num asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 2 ) ORDER BY num asc  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 7 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 8 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 12 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 26 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 30 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 31 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 33 ) ORDER BY num asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-08-01T14:01:02+08:00 ] ::1 /zwj/admin.php/index/home/menu_id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002290s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: set interactive_timeout=24*3600 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Use of undefined constant SYSTEM_VER - assumed 'SYSTEM_VER' E:\xampp\htdocs\zwj\Runtime\Cache\Admin\8aaadb31f2d26d849cb400504e368c01.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2016-08-01T14:01:04+08:00 ] ::1 /zwj/admin.php/good_cate/index/menu_id/32.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003156s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0375s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Good_cate' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Good_cate'  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_good_cate` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_good_cate` ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'good_cate' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'good_cate' AND `menu_id` = 32 AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0005s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'good_cate' AND `type` = 15  [ RunTime:0.0003s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'good_cate' AND `type` = 14  [ RunTime:0.0003s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 280 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 276 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2016-08-01T14:01:05+08:00 ] ::1 /zwj/admin.php/Conf/index/menu_id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001988s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003494s ]
+SQL: SHOW COLUMNS FROM `lyh_conf` [ RunTime:0.0296s ]
+SQL: SELECT * FROM `lyh_conf`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_image` [ RunTime:0.0277s ]
+SQL: SELECT `id`,`file` FROM `lyh_image` WHERE `action` = 'Conf' AND `name` = 'LOGO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib.class.php 第 100 行.
+NOTIC: [8] Undefined index: style E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 541 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-08-01T14:01:07+08:00 ] ::1 /zwj/admin.php/Conf/index/menu_id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001346s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+SQL: SHOW COLUMNS FROM `lyh_conf` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lyh_conf`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_image` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`file` FROM `lyh_image` WHERE `action` = 'Conf' AND `name` = 'LOGO'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib.class.php 第 100 行.
+NOTIC: [8] Undefined index: style E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Template\TagLib\Html.class.php 第 541 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-08-01T14:01:08+08:00 ] ::1 /zwj/admin.php/goods/index/is_delete/0/menu_id/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001373s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003224s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Goods'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_goods` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `is_delete` = 0 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'goods' AND `menu_id` = 34 AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0002s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 15  [ RunTime:0.0002s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 14  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 280 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-08-01T14:01:15+08:00 ] ::1 /zwj/admin.php/goods/index/is_delete/1/menu_id/35.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001675s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002741s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Goods'  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_goods` WHERE `is_delete` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `is_delete` = 1 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'goods' AND `menu_id` = 35 AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0004s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 15  [ RunTime:0.0003s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 14  [ RunTime:0.0002s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 273 行.
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 286 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-08-01T14:01:19+08:00 ] ::1 /zwj/admin.php/goods/index/is_delete/0/menu_id/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001724s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002717s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0011s ]
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Goods'  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_goods` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `is_delete` = 0 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'goods' AND `menu_id` = 34 AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0003s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 15  [ RunTime:0.0003s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 14  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 280 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-08-01T14:01:22+08:00 ] ::1 /zwj/admin.php/Goods/edit/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001348s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002504s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_good_cate`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: search E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 578 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000891s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2016-08-01T14:01:23+08:00 ] ::1 /zwj/admin.php/Goods/edit/id/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001411s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_good_cate`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: search E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 578 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2016-08-01T14:01:32+08:00 ] ::1 /zwj/admin.php/goods/index/is_delete/0/menu_id/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001434s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002306s ]
+SQL: SHOW COLUMNS FROM `lyh_goods` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Goods' ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SELECT `type`,`field` FROM `lyh_table` WHERE `table` = 'Goods'  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `lyh_goods` WHERE `is_delete` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_goods` WHERE `is_delete` = 0 ORDER BY id DESC LIMIT 0,20   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'goods' AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'goods' AND `menu_id` = 34 AND `show` = 1 ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `lyh_good_cate` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name` FROM `lyh_good_cate`  [ RunTime:0.0004s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 15  [ RunTime:0.0005s ]
+SQL: SELECT `field` FROM `lyh_table` WHERE `table` = 'goods' AND `type` = 14  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: td_list E:\xampp\htdocs\zwj\App\Admin\Controller\PublicController.class.php 第 280 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+

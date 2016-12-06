@@ -1,0 +1,97 @@
+[ 2016-07-19T10:18:48+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001927s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+
+[ 2016-07-19T10:19:23+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001338s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+
+[ 2016-07-19T10:19:50+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.004089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+
+[ 2016-07-19T10:21:02+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001853s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `lyh_user` [ RunTime:0.0368s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lyh_user` WHERE `username` = 'test3' OR `email` = 'test3' OR `mobile` = 'test3' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-07-19T10:32:13+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-07-19T10:32:26+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001324s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `lyh_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_user` WHERE `username` = 'test3' OR `email` = 'test3' OR `mobile` = 'test3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-07-19T10:33:20+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001849s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `lyh_user` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lyh_user` WHERE `username` = 'test3' OR `email` = 'test3' OR `mobile` = 'test3' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-07-19T10:33:52+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `lyh_user` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lyh_user` WHERE `username` = 'test3' OR `email` = 'test3' OR `mobile` = 'test3' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-07-19T17:08:51+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002586s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+

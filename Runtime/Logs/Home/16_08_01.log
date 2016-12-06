@@ -1,0 +1,152 @@
+[ 2016-08-01T09:37:17+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002433s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-08-01T10:06:41+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002915s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2016-08-01T11:03:34+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.067823s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.070314s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2016-08-01T11:05:23+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002631s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-08-01T11:31:35+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002652s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023934s ]
+
+[ 2016-08-01T11:38:08+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001832s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002209s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+
+[ 2016-08-01T11:38:32+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002394s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002774s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-01T11:38:34+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001402s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-01T11:42:58+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001858s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002225s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-01T11:50:02+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001851s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002229s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+

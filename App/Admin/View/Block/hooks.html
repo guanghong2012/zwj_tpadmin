@@ -1,0 +1,42 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="add();">{:L('ADD')}</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,name:名称:edit
+			,description:描述|450px
+			,update_time|to_date:更新时间
+			 " 
+	actionlist="edit:编辑, foreverdel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+<script>
+//添加跳转
+function add()
+{
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/addhook.html";
+}
+function edit(id)
+{
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/edithook/id/"+id+".html";
+}
+function foreverdel(id)
+{
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/delhook/id/"+id+".html";
+}
+</script>
+</body>
+</html>

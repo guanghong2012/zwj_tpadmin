@@ -1,0 +1,294 @@
+[ 2016-11-15T15:31:36+08:00 ] ::1 /zwj/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.021362s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.039552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.043095s ]
+
+[ 2016-11-15T15:31:36+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2016-11-15T15:31:39+08:00 ] ::1 /zwj/admin.php/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002687s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `lyh_admin` WHERE `adm_user` = 'admin' AND `is_effect` = 1 AND `is_delete` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lyh_log` [ RunTime:0.0031s ]
+SQL: INSERT INTO `lyh_log` (`log_info`,`log_time`,`log_admin`,`log_ip`,`log_status`,`module`,`action`) VALUES ('admin登陆成功！','1479195099','1','0.0.0.0','1','Index','login') [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `lyh_admin` [ RunTime:0.0028s ]
+SQL: UPDATE `lyh_admin` SET `adm_user`='admin',`adm_password`='3c086f596b4aee58e1d71b3626fefc87',`is_effect`='1',`is_delete`='0',`role_id`='1',`login_time`='1479195099',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2016-11-15T15:31:42+08:00 ] ::1 /zwj/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002927s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003417s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 0 ) ORDER BY num asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 1 ) ORDER BY num asc  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 19 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 21 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 14 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 4 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 24 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 2 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 7 ) ORDER BY num asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 8 ) ORDER BY num asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 12 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 26 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 30 ) ORDER BY num asc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 31 ) ORDER BY num asc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 33 ) ORDER BY num asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2016-11-15T15:31:48+08:00 ] ::1 /zwj/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002966s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 0 ) ORDER BY num asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 1 ) ORDER BY num asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 19 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 21 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 14 ) ORDER BY num asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 4 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 24 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 2 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 7 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 8 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 12 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 26 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 30 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 31 ) ORDER BY num asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_menu` WHERE ( status = 1 and pid = 33 ) ORDER BY num asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-11-15T15:31:50+08:00 ] ::1 /zwj/admin.php/index/home/menu_id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003400s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003666s ]
+SQL: set interactive_timeout=24*3600 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Use of undefined constant SYSTEM_VER - assumed 'SYSTEM_VER' E:\xampp\htdocs\zwj\Runtime\Cache\Admin\8aaadb31f2d26d849cb400504e368c01.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2016-11-15T15:31:58+08:00 ] ::1 /zwj/admin.php/Menu/index/menu_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002799s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003528s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 19 行.
+SQL: SELECT * FROM `lyh_menu` ORDER BY num  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined index: pid E:\xampp\htdocs\zwj\App\Admin\Controller\MenuController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+NOTIC: [8] Undefined variable: parentid E:\xampp\htdocs\zwj\ThinkPHP\Library\Think\Tree.class.php 第 123 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: menuname E:\xampp\htdocs\zwj\Runtime\Cache\Admin\5a1d71dcf039f1b3725a8d8d96ae9d91.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001118s ]
+
+[ 2016-11-15T15:32:09+08:00 ] ::1 /zwj/admin.php/menu/table/pid/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0022s ]
+SQL: SELECT `model` FROM `lyh_menu` WHERE ( id = 25 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id` FROM `lyh_table` WHERE `table` = 'User' ORDER BY id desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lyh_operate` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `lyh_operate` WHERE `table` = 'User' AND `menu_id` = 25 ORDER BY sort asc  [ RunTime:0.0218s ]
+SQL: SELECT `id` FROM `lyh_operate` WHERE `table` = 'User' AND `menu_id` = 25 ORDER BY id desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `table` FROM `lyh_table`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lyh_menu` [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'adv' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'user' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'record' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'good_cate' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'goods' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lyh_menu` WHERE `model` = 'cart' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+

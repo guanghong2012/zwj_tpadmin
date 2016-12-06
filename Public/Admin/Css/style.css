@@ -1,0 +1,116 @@
+@charset "utf-8";
+body{
+    font-size: 13px;
+}
+
+.radio{
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.nav{
+    margin-bottom: 5px;
+}
+
+form{
+    margin: 0 0 5px;
+}
+
+.page{
+    text-align: right;margin-right:25px;margin-top:5px;
+}
+
+.page a{
+    margin-left: 5px;
+}
+
+.page .current{
+    margin-left: 5px;
+    color: red;
+}
+
+
+.table td, .table th{
+    padding-top: 8px;
+    padding-bottom: 4px;
+	line-height:20ppx;
+	
+}
+.table th{
+   
+	background-color:#eaeaea;
+}
+
+.definewidth{
+	width:96%;
+	margin:auto;		
+}
+.m10{
+	margin-top:10px;
+}
+.m20{
+	padding-top:20px;
+}
+
+.tableleft{
+    text-align:right;
+	padding-left:5px;
+	background-color:#f5f5f5;
+
+}
+
+.tableleft label{
+    text-align:right;
+    float: left;
+    margin: 5px;
+    
+}
+.tableright{
+    width: 85%;
+    text-align:left;
+    padding-left:5px;
+}
+
+.tableright label{
+    text-align:left;
+    float: left;
+    margin: 5px;
+}
+
+/*formValidator±íµ¥ÑéÖ¤*/
+.onShow,.onFocus,.onError,.onCorrect,.onLoad,.onTime{display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline; vertical-align:middle;background:url(../Images/msg_bg.png) no-repeat;	color:#444;line-height:18px;padding:2px 10px 2px 23px; margin-left:10px;_margin-left:5px}
+.onShow{background-position:3px -147px;border-color:#40B3FF;color:#959595}
+.onFocus{background-position:3px -147px;border-color:#40B3FF;}
+.onError{background-position:3px -47px;border-color:#40B3FF; color:red}
+.onCorrect{background-position:3px -247px;border-color:#40B3FF;}
+.onLamp{background-position:3px -200px}
+.onTime{background-position:3px -1356px}
+
+.search_row{background: #8ba9c0 none repeat scroll 0 0;border: 1px solid #ccc;color: #fff;font-size: 14px;font-weight: bolder;padding: 5px 15px;}
+.search_row from{border: medium none; list-style-type: none; margin: 0; padding: 0;}
+.blank5{ clear:both; height:5px; overflow:hidden; visibility:visible}
+.blank10{ clear:both; height:10px; overflow:hidden; visibility:visible}
+.blank15{ clear:both; height:10px; overflow:hidden; visibility:visible}
+.blank20{ clear:both; height:10px; overflow:hidden; visibility:visible}
+level {margin:5px;}
+
+.textarea {
+    color: #666;
+    font-size: 12px;
+    height: 120px;
+    padding: 4px;
+    width: 300px;
+}
+
+.main_title {
+    border: #ccc solid 1px;
+    background: #8ba9c0;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin:20px 20px 0px 20px; 
+}
+
+.border_red{border:1px solid red;}
+.border_green{border:1px solid green;}

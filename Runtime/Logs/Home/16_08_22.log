@@ -1,0 +1,33 @@
+[ 2016-08-22T14:04:46+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.035894s ]
+INFO: [ app_init ] --END-- [ RunTime:0.050299s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030172s ]
+SQL: SHOW COLUMNS FROM `lyh_goods_attr` [ RunTime:0.0939s ]
+SQL: SHOW COLUMNS FROM `lyh_attr_type` [ RunTime:0.0702s ]
+SQL: SELECT g.*,a.name as attr_name,a.attr_type,a.attr_input FROM lyh_attr_type a,lyh_goods_attr g WHERE ( a.id = g.attr_id and g.goods_id = 1 ) ORDER BY sort desc  [ RunTime:0.0007s ]
+
+[ 2016-08-22T14:07:10+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002994s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+
+[ 2016-08-22T14:38:13+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002686s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+

@@ -1,0 +1,59 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<div class="main">
+<div class="main_title">更改密码</div>
+<div class="blank5"></div>
+<form name="edit"  method="post" class="definewidth" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="tableleft">管理员名称:</td>
+		<td class="tableright"><input type="text" class="textbox require" name="adm_user" value="{$info.adm_user}" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">原密码:</td>
+		<td class="tableright"><input type="password" class="textbox require" name="password" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">密码:</td>
+		<td class="tableright"><input type="password" class="textbox require" name="adm_password" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">确定密码:</td>
+		<td class="tableright"><input type="password" class="textbox require" name="adm_password2" /></td>
+	</tr>
+
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<input type="hidden" name="id" value="{$info.id}" />
+			<!--隐藏元素-->
+			<input type="submit" class="button" value="{:L('EDIT')}" />
+			<input type="reset" class="button" value="{:L('RESET')}" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+<script type="text/javascript">
+$('input[type=submit]').click(function(){
+	var adm_name = $('input[name=adm_user]').val();
+	var adm_password = $('input[name=adm_password]').val();
+	var adm_password2 = $('input[name=adm_password2]').val();
+	if(adm_name==''){
+		alert('管理员名称不能为空！');
+		return false;
+	}else if( adm_password != '' && adm_password != adm_password2){
+		alert('两次输入密码不一致！');
+		return false;
+	}
+});
+</script>
+</div>
+<include file="Public:footer" />

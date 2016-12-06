@@ -1,0 +1,40 @@
+[ 2016-08-05T15:55:25+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.019923s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021313s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.031266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031357s ]
+
+[ 2016-08-05T16:00:28+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001951s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001615s ]
+
+[ 2016-08-05T16:20:23+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002682s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003182s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+
+[ 2016-08-05T16:43:54+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002534s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002991s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+

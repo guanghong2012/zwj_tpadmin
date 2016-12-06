@@ -1,0 +1,51 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<div class="main">
+<div class="main_title">{:L('EDIT')} <a href="{:u("Role/index")}" class="back_list">{:L('BACK_LIST')}</a></div>
+<div class="blank5"></div>
+<form name="edit" class="definewidth" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="tableleft" style="font-size: 24px;text-align: center;">权限:</td>
+		<td class="tableright">
+			<table class="access_list" cellpadding=0 cellspacing=0 width="99%">
+			<foreach name="access_list" item="access_item">
+				<tr>
+					<td class="access_left" style="width:180px;">
+					<span title="{$access_item.module}">{$access_item.name}</span>&nbsp;&nbsp;<input type="checkbox" value="{$access_item.id}_0" name="role_access[]" class="check_all" <in name="access_item.id" value="$menu_ids"> checked="checked" </in> onclick="check_module(this);" />
+					
+					</td>
+					<td>
+
+						<foreach name="access_item.node_list" item="node_item">
+							<label style="padding:5px;"><span title="{$node_item.action}">{$node_item.name}&nbsp;</span><input type="checkbox" value="{$access_item.id}_{$node_item.id}" name="role_access[]" class="node_item" <in name="node_item.id" value="$menu_ids"> checked="checked" </in>  onclick="check_is_all(this);" /></label>
+						</foreach>
+
+					</td>
+				</tr>
+			</foreach>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<input type="hidden" name="role_id" value="{:trim($_REQUEST['role_id'])}" />
+			<!--隐藏元素-->
+			<button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+			<a href="{:u(CONTROLLER_NAME."/index")}" class="btn btn-success">返回列表</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+</div>
+<include file="Public:footer" />

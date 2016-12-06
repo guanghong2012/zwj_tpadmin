@@ -1,0 +1,66 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<div class="main">
+<div class="main_title">商品属性 <a href="{:u(CONTROLLER_NAME."/index",array('is_delete'=>0,'menu_id'=>34))}" class="back_list">{:L('BACK_LIST')}</a></div>
+<div class="blank5"></div>
+<form name="edit" action="{:U('Goods/attr_save')}" class="definewidth" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">商品类型:</td>
+		<td class="tableright">
+			<select name="type_id" onchange="get_attr_list()">
+				<option value="0">--请选择--</option>
+				<volist name="type" id="vo">
+					<option value="{$vo.id}" <if condition="$vo['id'] eq $type_id">selected</if>  >{$vo.name}</option>
+				</volist>
+			</select>
+		</td>
+	</tr>
+
+	<tbody id="attr_new_list">
+	{$attr_html}
+	</tbody>
+
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<input type="hidden" name="goods_id" value="{$goods_id}" />
+			<!--隐藏元素-->
+			<button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+			<a href="{:u(CONTROLLER_NAME."/index")}" class="btn btn-success">返回列表</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+</div>
+<script type="text/javascript">
+	function add_attr(obj){
+		var table = $(obj).parents("table")[0];
+		var tr = table.insertRow(-1);
+		var td = $(obj).parents("tr").html().replace("add_attr(this)","del_attr(this)").replace("添加","删除");
+		tr.innerHTML = td;
+	}
+	function del_attr(obj){
+		$(obj).parent().parent().remove();
+	}
+	function  get_attr_list(){
+		var type_id = $("select[name=type_id]").find("option:selected").val();
+		var goods_id = $("input[name=goods_id]").val();
+		var url = "{:U('Goods/attr_html')}";
+		if(type_id > 0)
+		$.post(url,{type_id:type_id,goods_id:goods_id},function(data){
+			$("#attr_new_list").html(data);
+		});
+
+	}
+</script>
+<include file="Public:footer" />

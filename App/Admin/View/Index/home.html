@@ -1,0 +1,46 @@
+<include file="Public:header" />
+<div class="qbt_nidelikai">
+<div class="form-inline definewidth m20">
+  <span><span class="txtt">后台管理</span></span>
+</div>
+
+<table class="table table-bordered table-hover definewidth m10" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+	<td width="30%" height="30" align="right">系统版本：</td>
+	<td width="70%" height="30">v<?php echo SYSTEM_VER; ?></td>
+  </tr>
+  <tr>
+	<td width="30%" height="30" align="right">最近备份数据日期：</td>
+	<td width="70%" height="30">{$fileTime}</td>
+  </tr>
+  <tr>
+	<td width="30%" height="30" align="right">空间大小：</td>
+	<td width="70%" height="30"><?php echo number_format(disk_free_space('../')/1024/1024,2,'.','').'M'.'/'.number_format(disk_total_space('../')/1024/1024,2,'.','').'M';?></td>
+  </tr>
+  <tr>
+	<td width="30%" height="30" align="right">当前时间：</td>
+	<td width="70%" height="30"><?php echo date("Y");?>年<?php echo date("m");?>月<?php echo date("d");?>日　<?php echo date("G:i:s");?></td>
+  </tr>
+  <tr>
+	<td height="30" align="right">当前IP地址：</td>
+	<td height="30"><?php echo $_SERVER["REMOTE_ADDR"];?></td>
+  </tr>
+  <tr>
+	<td height="30" align="right">服务器名称：</td>
+	<td height="30"><?php echo $_SERVER["SERVER_SOFTWARE"];?></td>
+  </tr>
+  <tr>
+	<td height="30" align="right">屏幕分辨率：</td>
+	<td height="30">
+	<script language="javascript">
+	<!--
+	document.write(screen.width+"*"+screen.height)
+	//-->
+	</script>
+	</td>
+  </tr>
+</table>
+
+</div>
+</body>
+</html>

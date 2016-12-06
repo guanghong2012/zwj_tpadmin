@@ -1,0 +1,24 @@
+[ 2016-07-07T10:00:59+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zwjlyh.lyh_addons' doesn't exist
+
+[ 2016-07-07T10:02:10+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zwjlyh.lyh_addons' doesn't exist
+
+[ 2016-07-07T10:02:14+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'zwjlyh.lyh_addons' doesn't exist
+
+[ 2016-07-07T16:01:20+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10' at line 1
+
+[ 2016-07-07T16:02:18+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' LIMIT 10' at line 1
+
+[ 2016-07-07T16:03:15+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10' at line 1
+
+[ 2016-07-07T16:03:19+08:00 ] ::1 /zwj/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 10' at line 1
+
+[ 2016-07-07T16:24:36+08:00 ] ::1 /zwj/
+ERR: Think\Model:_select方法不存在！
+

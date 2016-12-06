@@ -1,0 +1,34 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<PHP>
+	function get_role($id,$deal)
+	{
+		return $deal[$id];
+	}
+</PHP>
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="restore();">恢复</button>
+    <button type="button" class="btn" onclick="foreverdel();" >完全删除</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,adm_user:管理员名称:edit
+			,role_id|get_role=$role_name:权限组
+			,login_time|to_date:最后登陆时间
+			,login_ip:登陆IP
+			,is_effect|get_is_effect=$user['id']:是否启用 " 
+	actionlist="restore:恢复, foreverdel:完全删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+</body>
+</html>

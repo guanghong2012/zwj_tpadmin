@@ -1,0 +1,247 @@
+[ 2016-08-08T09:14:31+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.024001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024963s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013630s ]
+
+[ 2016-08-08T09:25:12+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001928s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002319s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:18+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001956s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002344s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:19+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001310s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001627s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:19+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001660s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:20+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:31+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002233s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002607s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:27:32+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001288s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:30:33+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001773s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002136s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 157 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 158 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 1 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 165 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 166 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 178 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 0 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 1 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 181 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 0 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 183 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 106 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 121 行.
+
+[ 2016-08-08T09:30:51+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 157 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 158 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 1 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 165 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 166 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 178 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 0 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 1 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 81 行.
+NOTIC: [2] fseek() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 181 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] unpack(): Type V: not enough input, need 4, have 0 E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 69 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 183 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 106 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 121 行.
+
+[ 2016-08-08T09:33:35+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002266s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002640s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:33:36+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001675s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:33:54+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002585s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002921s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:34:14+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001299s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+NOTIC: [2] fopen(E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net/UTFWry.dat): failed to open stream: No such file or directory E:\xampp\htdocs\zwj\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+
+[ 2016-08-08T09:38:40+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001826s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002208s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+
+[ 2016-08-08T09:38:56+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001338s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001662s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-08-08T09:39:49+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-08-08T09:40:18+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001731s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-08-08T09:40:44+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001804s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+
+[ 2016-08-08T09:41:11+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id E:\xampp\htdocs\zwj\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+

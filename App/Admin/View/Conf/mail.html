@@ -1,0 +1,79 @@
+<include file="Public/header" />
+<form name="edit" action="{:U('conf/insert')}" class="definewidth m20" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" >
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">SMTP服务器:</td>
+		
+		<td class="item_input"><input type="text" class="textbox" name="MAIL_HOST" value="{$conf['MAIL_HOST']}" /></td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">SMTP认证:</td>
+		<td class="item_input">
+			<select name="MAIL_SMTPAUTH">
+				<option value="false" <if condition="$conf['MAIL_SMTPAUTH'] eq false">selected="selected"</if> >关闭</option>
+				<option value="true" <if condition="$conf['MAIL_SMTPAUTH'] eq true">selected="selected"</if> >开启</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">发件人:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="MAIL_FROMNAME" value="{$conf['MAIL_FROMNAME']}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">您的邮箱:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="MAIL_USERNAME" value="{$conf['MAIL_USERNAME']}" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">发件人地址:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="MAIL_FROM" value="{$conf['MAIL_FROM']}" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">邮箱密码:</td>
+		<td class="item_input">
+			<input type="password" class="textbox" name="MAIL_PASSWORD" value="{$conf['MAIL_PASSWORD']}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">邮件编码:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="MAIL_CHARSET" value="{$conf['MAIL_CHARSET']}" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">格式邮件:</td>
+		<td class="item_input">
+			<select name="MAIL_ISHTML">
+				<option value="true" <if condition="$conf['MAIL_ISHTML'] eq true">selected="selected"</if> >HTML</option>
+				<option value="false" <if condition="$conf['MAIL_ISHTML'] eq false">selected="selected"</if> >TXT</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+        <td class="tableleft"></td>
+        <td>
+			<input type="submit" class="btn btn-primary" value="{:L('EDIT')}" />
+			<input type="reset" class="btn btn-success" class="button" value="{:L('RESET')}" />
+        </td>
+    </tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>		 
+</form>
+
+<include file="Public/footer" />

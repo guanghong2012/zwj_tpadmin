@@ -1,0 +1,134 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="backup();">备份数据</button>
+    <button type="button" class="btn" onclick="optimize();">优化表</button>
+    <button type="button" class="btn" onclick="repair();">修复表</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="name:数据表名
+		  ,rows:总记录
+		  ,create_time:创建日期
+		  ,collation:数据编码
+		"
+	actionlist="backup:备份,optimize:优化,repair:修复"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+<script>
+function backup(id)
+{
+	
+	if(!id)
+	{
+		
+		idBox = $(":checkbox:checked");
+		if(idBox.length == 0)
+		{
+			if(confirm('确定要备份整个数据库吗？'))
+			$.ajax({
+				url: ROOT+"/"+CONTROLLER_NAME+"/backall.html", 
+				data: "ajax=1",
+				dataType: "json",
+				success: function(obj){
+					if(obj.status==1)
+					alert(obj.msg);
+					//location.href = obj.data;
+				}
+			});
+			return false;
+		}
+		idArray = new Array();
+		$.each( idBox, function(i, n){
+			idArray.push($(n).val());
+		});
+		id = idArray.join(",");
+	}
+
+	if(confirm('确定要备份选择的表吗？'))
+	$.ajax({
+		url: ROOT+"/"+CONTROLLER_NAME+"/backtables.html?tab="+id, 
+		data: "ajax=1",
+		dataType: "json",
+		success: function(obj){
+			if(obj.status==1)
+			alert(obj.msg);
+			//location.href = obj.data;
+		}
+	});
+}
+function optimize(id)
+{
+	
+	if(!id)
+	{
+		
+		idBox = $(":checkbox:checked");
+		if(idBox.length == 0)
+		{
+			alert("请选择所要优化的表！");
+			return false;
+		}
+		idArray = new Array();
+		$.each( idBox, function(i, n){
+			idArray.push($(n).val());
+		});
+		id = idArray.join(",");
+	}
+
+	if(confirm('确定要优化选择的表吗？'))
+	$.ajax({
+		url: ROOT+"/"+CONTROLLER_NAME+"/optimize.html?table="+id, 
+		data: "ajax=1",
+		dataType: "json",
+		success: function(obj){
+			if(obj.status==1)
+			alert(obj.msg);
+			//location.href = obj.data;
+		}
+	});
+}
+function repair(id)
+{
+	
+	if(!id)
+	{
+		
+		idBox = $(":checkbox:checked");
+		if(idBox.length == 0)
+		{
+			alert("请选择所要修复的表！");
+			return false;
+		}
+		idArray = new Array();
+		$.each( idBox, function(i, n){
+			idArray.push($(n).val());
+		});
+		id = idArray.join(",");
+	}
+
+	if(confirm('确定要修复选择的表吗？'))
+	$.ajax({
+		url: ROOT+"/"+CONTROLLER_NAME+"/repair.html?table="+id, 
+		data: "ajax=1",
+		dataType: "json",
+		success: function(obj){
+			if(obj.status==1)
+			alert(obj.msg);
+			//location.href = obj.data;
+		}
+	});
+}
+</script>
+</body>
+</html>

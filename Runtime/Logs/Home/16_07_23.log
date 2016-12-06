@@ -1,0 +1,50 @@
+[ 2016-07-23T09:43:07+08:00 ] ::1 /zwj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `lyh_user` [ RunTime:0.0591s ]
+SQL: SHOW COLUMNS FROM `lyh_table` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `lyh_user` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lyh_cart` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'Cart' ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: _auto E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 70 行.
+SQL: SELECT * FROM `lyh_cart` WHERE ( user_id  = 3 )  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Home\Model\CartModel.class.php 第 14 行.
+SQL: DELETE FROM `lyh_cart` WHERE ( id = 1 ) [ RunTime:0.0631s ]
+SQL: SELECT * FROM `lyh_table` WHERE `data` LIKE 'Cart|%'  [ RunTime:0.0353s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 133 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ FirstHook ] --START--
+SQL: SHOW COLUMNS FROM `lyh_block` [ RunTime:0.0309s ]
+SQL: SELECT `config` FROM `lyh_block` WHERE `name` = 'CeshiBlock' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `username` FROM `lyh_user` WHERE ( `create_time` > 1464763526 AND `create_time` < 1468046742  ) ORDER BY create_time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lyh_table` WHERE `table` = 'User' ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: username E:\xampp\htdocs\zwj\App\Common\Model\PublicModel.class.php 第 110 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.044601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: Run Block\CeshiBlock\CeshiBlockBlock [ RunTime:0.044229s ]
+INFO: [ FirstHook ] --END-- [ RunTime:0.044270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+

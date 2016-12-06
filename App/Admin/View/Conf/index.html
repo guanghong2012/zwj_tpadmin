@@ -1,0 +1,47 @@
+<include file="Public/header" />
+<form  action="{:U('conf/insert')}" method="post" class="definewidth m20" enctype="multipart/form-data" >
+<table class="table table-bordered table-hover m10">
+    <tr>
+        <td class="tableleft">站点名称</td>
+        <td><input type="text" name="SITE_NAME" value="{$conf['SITE_NAME']}" /></td>
+    </tr>
+	
+	<tr class="noicon">
+        <td class="tableleft">系统LOGO</td>
+        <td>
+			<html:imgUpload  id="LOGO" name="LOGO" datasource="logo" />
+		</td>
+    </tr>
+
+    <tr>
+        <td class="tableleft">手机模板:</td>
+        <td class="item_input">
+            <select name="MOBILE">
+                <option value="0" <if condition="$conf['MOBILE'] eq 0">selected="selected"</if> >关闭</option>
+                <option value="1" <if condition="$conf['MOBILE'] eq 1">selected="selected"</if> >开启</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr class="noicon">
+        <td class="tableleft">SEO关键词</td>
+        <td><input type="text" name="SEO_KEYWORD" value="{$conf['SEO_KEYWORD']}" /></td>
+    </tr>
+	<tr class="noicon">
+        <td class="tableleft">SEO描述</td>
+        <td><input type="text" name="SEO_DESCRIPTION" value="{$conf['SEO_DESCRIPTION']}" /></td>
+    </tr>
+
+    <tr>
+        <td class="tableleft">站点版权</td>
+        <td><textarea class="textarea" name="SITE_LICENSE">{$conf['SITE_LICENSE']}</textarea></td>
+    </tr>
+    <tr>
+        <td class="tableleft"></td>
+        <td>
+            <button type="submit" class="btn btn-primary" type="button">保存</button>
+        </td>
+    </tr>
+</table>
+</form>
+<include file="Public/footer" />

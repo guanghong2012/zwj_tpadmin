@@ -1,0 +1,36 @@
+[ 2016-06-03T09:02:25+08:00 ] ::1 /zwj/Public/Admin/css/base.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+ERR: 无法加载模块:Public
+
+[ 2016-06-03T13:30:45+08:00 ] ::1 /zwj/Uploads/$image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-03T13:39:35+08:00 ] ::1 /zwj/Uploads/$image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-03T13:39:35+08:00 ] ::1 /zwj/Uploads/$image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-03T13:39:58+08:00 ] ::1 /zwj/Uploads/$image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+ERR: 无法加载模块:Uploads
+
+[ 2016-06-03T13:39:58+08:00 ] ::1 /zwj/Uploads/$image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+ERR: 无法加载模块:Uploads
+

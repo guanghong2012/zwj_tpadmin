@@ -1,0 +1,105 @@
+<include file="Public/header" />
+<form name="edit" action="{:U('conf/insert')}" class="definewidth m20" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" >
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="tableleft" style="width:180px;">水印图片:</td>
+		<td class="item_input">
+			<html:imgUpload  id="WATER_IMG" name="WATER_IMG" datasource="water" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">水印透明度:</td>
+		
+		<td class="item_input"><input type="text" class="textbox" name="WATER_ALPHA" value="{$conf['WATER_ALPHA']}" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">水印位置:</td>
+		<td class="item_input">
+			<select name="WATER_POSITION">
+				<option value="1" <if condition="$conf['WATER_POSITION'] eq 1">selected="selected"</if> >左上角</option>
+				<option value="2" <if condition="$conf['WATER_POSITION'] eq 2">selected="selected"</if> >上居中</option>
+				<option value="3" <if condition="$conf['WATER_POSITION'] eq 3">selected="selected"</if> >右上角</option>
+				<option value="4" <if condition="$conf['WATER_POSITION'] eq 4">selected="selected"</if> >左居中</option>
+				<option value="5" <if condition="$conf['WATER_POSITION'] eq 5">selected="selected"</if> >居中</option>
+				<option value="6" <if condition="$conf['WATER_POSITION'] eq 6">selected="selected"</if> >右居中</option>
+				<option value="7" <if condition="$conf['WATER_POSITION'] eq 7">selected="selected"</if> >左下角</option>
+				<option value="8" <if condition="$conf['WATER_POSITION'] eq 8">selected="selected"</if> >下居中</option>
+				<option value="9" <if condition="$conf['WATER_POSITION'] eq 9">selected="selected"</if> >右下角</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">开启水印:</td>
+		<td class="item_input">
+			<select name="WATER">
+				<option value="0" <if condition="$conf['WATER'] eq 0">selected="selected"</if> >关闭</option>
+				<option value="1" <if condition="$conf['WATER'] eq 1">selected="selected"</if> >开启</option>
+			</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">上传图片大小(字节):</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="IMG_SIXE" value="{$conf['IMG_SIXE']}" />
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">上传图片类型:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="IMG_TYPE" value="{$conf['IMG_TYPE']}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">开启缩略图:</td>
+		<td class="item_input">
+			<select name="THUMB">
+				<option value="0" <if condition="$conf['THUMB'] eq 0">selected="selected"</if> >关闭</option>
+				<option value="1" <if condition="$conf['THUMB'] eq 1">selected="selected"</if> >开启</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">缩略图长:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="THUMB_WIDTH" value="{$conf['THUMB_WIDTH']}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">缩略图高:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="THUMB_HEIGHT" value="{$conf['THUMB_HEIGHT']}" />
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">缩略图类型:</td>
+		<td class="item_input">
+			<select name="THUMB_TYPE">
+				<option value="1" <if condition="$conf['THUMB_TYPE'] eq 1">selected="selected"</if> >等比例缩放</option>
+				<option value="2" <if condition="$conf['THUMB_TYPE'] eq 2">selected="selected"</if> >缩放后填充</option>
+				<option value="3" <if condition="$conf['THUMB_TYPE'] eq 3">selected="selected"</if> >居中裁剪</option>
+				<option value="4" <if condition="$conf['THUMB_TYPE'] eq 4">selected="selected"</if> >左上角裁剪</option>
+				<option value="5" <if condition="$conf['THUMB_TYPE'] eq 5">selected="selected"</if> >右下角裁剪</option>
+				<option value="6" <if condition="$conf['THUMB_TYPE'] eq 6">selected="selected"</if> >固定尺寸缩放</option>
+			</select>
+		</td>
+	</tr>
+
+	<tr>
+        <td class="tableleft"></td>
+        <td>
+			<input type="submit" class="btn btn-primary" value="{:L('EDIT')}" />
+			<input type="reset" class="btn btn-success" class="button" value="{:L('RESET')}" />
+        </td>
+    </tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>		 
+</form>
+
+<include file="Public/footer" />

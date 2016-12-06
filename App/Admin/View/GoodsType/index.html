@@ -1,0 +1,39 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<PHP>
+	function get_attr_count($id)
+	{
+		$count = M("AttrType")->where("type_id = %d",$id)->count();
+		return $count;
+	}
+</PHP>
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="add();">{:L('ADD')}</button>
+    <button type="button" class="btn" onclick="foreverdel();">{:L('DEL')}</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,name:类型名称:edit
+			,id|get_attr_count:属性数
+			,is_effect|get_is_effect=$user['id']:是否启用 " 
+	actionlist="attr_list:属性列表, edit:编辑, foreverdel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+</body>
+<script type="text/javascript">
+	function attr_list(id){
+		var url =  ROOT+"/"+CONTROLLER_NAME+"/attr_list/type_id/"+id+".html";
+		location.href = url;
+	}
+</script>
+</html>

@@ -1,0 +1,66 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<load href='__JS__/adddate.js' />
+<PHP>
+	function get_admin_user($id,$deal)
+	{
+		return $deal[$id];
+	}
+	function getStatus($t){
+		if($t == 1){
+			return "操作成功";
+		}else{
+			return "操作失败";
+		}
+	}
+</PHP>
+
+<div class="form-inline definewidth m20">  
+	<div class="search_row">
+		<div class="blank5"></div>
+		<form name="search" action="" method="get">	
+			<level>管理员：
+				<select name="log_admin" >
+					<option value="">全  部</option>
+					<volist name="admin_name" id="v">
+						<option value="{$i}" <if condition="$i eq $_REQUEST['log_admin']">selected</if> >{$v}</option>
+					</volist>
+				</select>
+			</level>
+			<level>操作模块：<input type='text' style='width:80px;' name='model' value='{$_REQUEST["model"]}' ></level>
+			<level>操作时间：
+				<input type='text' name='start_time' style='width:100px;' value='{$_REQUEST["start_time"]}' id="start_time" onclick="SelectDate(this,'yyyy-MM-dd')" >
+				 - 
+				<input type='text' name='end_time' value='{$_REQUEST["end_time"]}' style='width:100px;' id="end_time" onclick="SelectDate(this,'yyyy-MM-dd')">
+			</level>
+			<button type="submit" class="btn btn-primary">查询</button>
+			
+			<input type="button" class="btn" style="float:right;" value="刷新" onclick="window.location.reload()">
+		</form>
+	</div>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,log_admin|get_admin_user=$admin_name:操作管理员
+			,module:操作模块
+			,action:操作方法
+			,log_time|to_date:操作时间
+			,log_ip:操作IP
+			,log_info:操作说明
+			,log_status|getStatus:操作状态 " 
+	actionlist="foreverdel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+</body>
+</html>

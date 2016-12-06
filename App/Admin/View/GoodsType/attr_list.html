@@ -1,0 +1,98 @@
+<tagLib name="html" />
+<include file="Public:header" />
+<PHP>
+	function get_attr_name($id,$data)
+	{
+		return $data[$id];
+	}
+	function get_attr_input($tag){
+		$data = array("1"=>"手工录入","2"=>"列表中选择","3"=>"多行文本框");
+		return $data[$tag];
+	}
+</PHP>
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="add({$_REQUEST['type_id']});">{:L('ADD')}</button>
+    <button type="button" class="btn" onclick="foreverdel();">{:L('DEL')}</button>
+</div>
+
+<div class="form-inline definewidth m20">  
+	<div class="search_row">
+		<div class="blank5"></div>
+		<form name="search" action="" method="get">	
+			<level>商品类型：
+				<select name="type_id" >
+					<volist name="type" id="v">
+						<option value="{$v.id}" <if condition="$v['id'] eq $_REQUEST['type_id']">selected</if> >{$v.name}</option>
+					</volist>
+				</select>
+			</level>
+			
+			<button type="submit" class="btn btn-primary">查询</button>
+			
+		</form>
+	</div>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,name:属性名称:edit
+			,type_id|get_attr_name=$type_name:商品类型
+			,attr_input|get_attr_input:录入方式
+			,attr_content:可选值列表
+			,sort:排序 " 
+	actionlist="edit:编辑, foreverdel:删除"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+</body>
+<script type="text/javascript">
+	function add(id){
+		location.href = ROOT+"/"+CONTROLLER_NAME+"/attr_add/type_id/"+id+".html";
+	}
+
+	function edit(id){
+		location.href = ROOT+"/"+CONTROLLER_NAME+"/attr_edit/id/"+id+".html";
+	}
+
+	//完全删除
+	function foreverdel(id)
+	{
+		
+		if(!id)
+		{
+			
+			idBox = $(":checkbox:checked");
+			if(idBox.length == 0)
+			{
+				alert('请选择要删除的选项');
+				return;
+			}
+			idArray = new Array();
+			$.each( idBox, function(i, n){
+				idArray.push($(n).val());
+			});
+			id = idArray.join(",");
+		}
+
+		if(confirm('确定要删除吗？'))
+		$.ajax({ 
+			url: ROOT+"/"+CONTROLLER_NAME+"/attr_delete.html?id="+id, 
+			data: "ajax=1",
+			dataType: "json",
+			success: function(obj){
+				$("#info").html(obj.info);
+				if(obj.status==1)
+				location.href=location.href;
+			}
+		});
+	}
+</script>
+</html>

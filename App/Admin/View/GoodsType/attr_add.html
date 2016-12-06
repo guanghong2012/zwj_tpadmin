@@ -1,0 +1,85 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<div class="main">
+<div class="main_title">{:L('ADD')} <a href="{:u(CONTROLLER_NAME."/attr_list",array("type_id"=>$_REQUEST['type_id']))}" class="back_list">{:L('BACK_LIST')}</a></div>
+<div class="blank5"></div>
+<form name="edit" action="" class="definewidth" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="tableleft">属性名称:</td>
+		<td class="tableright"><input type="text" class="textbox require" name="name" /></td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">商品类型:</td>
+		<td class="tableright">
+				<select name="type_id">
+					<volist name="type" id="vo">
+						<option value="{$vo.id}" <if condition="$v['id'] eq $_REQUEST['type_id']">selected</if>  >{$vo.name}</option>
+					</volist>
+				</select>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">排	序:</td>
+		<td class="tableright"><input type="text" class="textbox" name="sort" /></td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">是否可选:</td>
+		<td class="tableright">
+			<label><input type="radio" name="attr_type" value="1" checked="checked" />唯一属性</label>
+			<label><input type="radio" name="attr_type" value="2"  />单选属性</label>
+			<label><input type="radio" name="attr_type" value="3"  />复选属性</label>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">录入方式:</td>
+		<td class="tableright">
+			<label><input type="radio" name="attr_input" onclick="attr_b()" value="1" checked="checked" />手工录入</label>
+			<label><input type="radio" name="attr_input" onclick="attr_b()" value="2"  />列表中选择（一行代表一个可选值）</label>
+			<label><input type="radio" name="attr_input" onclick="attr_b()" value="3"  />多行文本框</label>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">可选值列表:</td>
+		<td class="tableright">
+			<textarea name="attr_content" rows="5"></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<!--隐藏元素-->
+			<button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;
+			<a href="{:u(CONTROLLER_NAME."/index")}" class="btn btn-success">返回列表</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+</div>
+<script type="text/javascript">
+	function attr_b(){
+		var v = $("input[name=attr_input]:checked").val();
+		if(v == 2){
+			$("textarea[name=attr_content]").attr("disabled",false);
+		}else{
+			$("textarea[name=attr_content]").attr("disabled",true);
+		}
+
+	}
+	attr_b();
+</script>
+<include file="Public:footer" />

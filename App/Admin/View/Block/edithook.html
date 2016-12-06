@@ -1,0 +1,132 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<style type="text/css">
+	.check-tips {
+	    margin-left: 8px;
+	    color: #aaa;
+	    font-weight: normal;
+	}
+	.controls {
+	    overflow: hidden;
+	    padding: 5px 5px 5px 0;
+	}
+	.dragsort li {
+	    margin-bottom: 5px;
+	    padding: 0 6px;
+	    height: 30px;
+	    width:25%;
+	    line-height: 30px;
+	    border: 1px solid #eee;
+	    background-color: #fff;
+	    overflow: hidden;
+	}
+	.dragsort li b {
+	    display: none;
+	    float: right;
+	    padding: 0 6px;
+	    font-weight: bold;
+	    color: #000;
+	    width:10px;
+	}
+</style>
+<div class="main">
+<div class="main_title">{:L('ADD')} <a href="{:u(CONTROLLER_NAME."/hooks")}" class="back_list">{:L('BACK_LIST')}</a></div>
+<div class="blank5"></div>
+<form name="edit" action="{:U('updateHook')}" class="definewidth" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	
+	<tr>
+		<td class="tableleft">钩子名称</td>
+		<td class="tableright">
+			<input type="text" class="textbox require" name="name" value="{$info.name}" />
+			<span class="check-tips">（需要在程序中先添加钩子，否则无效）</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">钩子描述</td>
+		<td class="tableright">
+			<textarea name="description" rows="6">{$info.description}</textarea><span class="check-tips">（钩子的描述信息）</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft">是否启用:</td>
+		<td class="tableright">
+			<label>{:L('IS_EFFECT_1')}<input type="radio" name="status" value="1" <eq name="info.status" value="1">checked="checked"</eq> /></label>
+			<label>{:L('IS_EFFECT_0')}<input type="radio" name="status" value="0" <eq name="info.status" value="0">checked="checked"</eq> /></label>
+		</td>
+	</tr>
+	<present name="info">
+
+	<tr>
+		<td class="tableleft">钩子挂载的插件排序</td>
+		<td class="tableright">
+			<span class="check-tips">（拖动后保存顺序，影响同一个钩子挂载的插件执行先后顺序）</span>
+			<div class="controls">
+				<input type="hidden" name="addons" value="{$info.addons}" readonly>
+				<empty name="info.addons">
+					暂无插件，无法排序
+				<else />
+				<ul id="sortUl" class="dragsort">
+					<volist name=":explode(',',$info['addons'])" id="addons_vo">
+						<li class="getSort" style="cursor: pointer;"><b>&times;</b><em>{$addons_vo}</em></li>
+					</volist>
+				</ul>
+				<script type="text/javascript">
+					$(function(){
+						$("#sortUl").dragsort({
+                            dragSelector:'li',
+                            placeHolderTemplate: '<li class="draging-place">&nbsp;</li>',
+                            dragEnd:function(){
+                            	updateVal();
+                            }
+                        });
+
+						$('#sortUl li b').click(function(){
+                        	$(this).parent().remove();
+                        	updateVal();
+                        });
+						$('#sortUl li').hover(function(){
+	                        $(this).children("b").show();
+	                    },function(){
+	                        $(this).children("b").hide();
+                        });
+						// 更新排序后的隐藏域的值
+                        function updateVal() {
+                        	var sortVal = [];
+                        	$('#sortUl li').each(function(){
+                        		sortVal.push($('em',this).text());
+                        	});
+                            $("input[name='addons']").val(sortVal.join(','));
+                        }
+					})
+				</script>
+				</empty>
+			</div>
+		</td>
+	</tr>
+
+	</present>
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<input type="hidden" name="id" value="{$info.id}">
+			<!--隐藏元素-->
+			<button type="submit" class="btn btn-primary" type="button">提交</button> &nbsp;&nbsp;
+			<a href="{:u(CONTROLLER_NAME."/index")}" class="btn btn-success">返回列表</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+</div>
+<present name="info">
+	<script type="text/javascript" src="__JS__/jquery.dragsort-0.5.1.min.js"></script>
+</present>
+<include file="Public:footer" />

@@ -1,0 +1,10 @@
+[ 2016-12-06T14:23:07+08:00 ] ::1 /zwj_tpadmin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008704s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010054s ]
+INFO: [ app_begin ] --START--
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\zwj_tpadmin\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php 第 67 行.
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005816s ]
+

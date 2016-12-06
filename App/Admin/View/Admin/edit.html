@@ -1,0 +1,59 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<div class="main">
+<div class="main_title">{:L('ADD')} <a href="{:u(CONTROLLER_NAME."/index")}" class="back_list">{:L('BACK_LIST')}</a></div>
+<div class="blank5"></div>
+<form name="edit" action="" class="definewidth" method="post" enctype="multipart/form-data">
+<table class="table table-bordered table-hover m10" cellpadding=0 cellspacing=0>
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="tableleft">管理员名称:</td>
+		<td class="tableright"><input type="text" class="textbox require" name="adm_user" value="{$info.adm_user}" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">密码:</td>
+		<td class="tableright"><input type="password" class="textbox require" name="adm_password" /><span style="color:red"> 留空就不修改密码！</span></td>
+	</tr>
+	<tr>
+		<td class="tableleft">确定密码:</td>
+		<td class="tableright"><input type="password" class="textbox require" name="adm_password2" /></td>
+	</tr>
+	<tr>
+		<td class="tableleft">权限组:</td>
+		<td class="tableright">
+			<select name="role_id">				
+			<option value="0">请选择权限</option>
+			<volist name="role_name" id="vo">
+			<option value="{$vo.id}" <if condition="$info['role_id'] eq $vo['id']">selected="selected"</if> >{$vo.name}</option>
+			</volist>
+			</select>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tableleft">是否启用:</td>
+		<td class="tableright">
+			<label>{:L('IS_EFFECT_1')}<input type="radio" name="is_effect" value="1" <eq name="info.is_effect" value="1">checked="checked"</eq> /></label>
+			<label>{:L('IS_EFFECT_0')}<input type="radio" name="is_effect" value="0" <eq name="info.is_effect" value="0">checked="checked"</eq> /></label>
+		</td>
+	</tr>
+	<tr>
+		<td class="tableleft"></td>
+		<td class="tableright">
+			<!--隐藏元素-->
+			<input type="hidden" name="id" value="{$info.id}">
+			<!--隐藏元素-->
+			<button type="submit" class="btn btn-primary" type="button">编辑</button> &nbsp;&nbsp;
+			<a href="{:u(CONTROLLER_NAME."/index")}" class="btn btn-success">返回列表</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>	 
+</form>
+</div>
+<include file="Public:footer" />

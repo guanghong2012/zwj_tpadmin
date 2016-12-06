@@ -1,0 +1,21 @@
+<include file="Public/header" />
+<notempty name="adddate">
+<load href='__JS__/adddate.js' />
+</notempty>
+<div class="form-inline definewidth m20">  
+	<button type="button" class="btn btn-success" onclick="add();">{:L('ADD')}</button>
+	<button type="button" class="btn" onclick="foreverdel();">{:L('DEL')}</button>
+	<div class="blank10"></div>
+	<notempty name="search_list">
+	<div class="search_row">
+		<div class="blank5"></div>
+		<form name="search" action="" method="get">	
+			{$search_list}
+			<button type="submit" class="btn btn-primary">查询</button>
+		</form>
+	</div>
+	</notempty>
+</div>
+{$html_list}
+<div id="example_paginate" class="inline pull-right page">{$page}</div>
+<include file="Public/footer" />

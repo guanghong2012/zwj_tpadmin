@@ -1,0 +1,33 @@
+<tagLib name="html" />
+<include file="Public:header" />
+
+<div class="form-inline definewidth m20">  
+    <button type="button" class="btn btn-success" onclick="add();">{:L('ADD')}</button>
+    <button type="button" class="btn" onclick="foreverdel();">{:L('DEL')}</button>
+</div>
+
+<div class="blank5"></div>
+
+	<html:list 
+	id="dataTable" 
+	style="table table-bordered table-hover definewidth m10" 
+	name="user" 
+	checkbox="true" 
+	action="true" 
+	datasource="list" 
+	show="id:编号|50px
+			,name:用户组名:edit
+			,is_effect|get_is_effect=$user['id']:是否启用 " 
+	actionlist="edit:编辑, foreverdel:删除, role:设置权限"/>
+
+  <div id="example_paginate" class="inline pull-right page">{$page}</div>
+  
+<script>
+//添加跳转
+function role(role_id)
+{
+	location.href = ROOT+"/"+CONTROLLER_NAME+"/role/role_id/"+role_id+".html";
+}
+</script>
+</body>
+</html>
